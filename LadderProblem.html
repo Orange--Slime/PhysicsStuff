@@ -1,0 +1,38 @@
+<html>
+<head>
+	<title>Ladder Problem</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./LadderProblem.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="container">
+		    <img id="ladderProblem" src="./LadderProblemTemplate.png" alt="There's suppsed to be a picture here."></img>
+			</div>
+		  <div class="container">
+		    <form id="myForm">
+		    Horizontal Θ: <input oninput="handleClick(this)" type="number" name="hTheta" value=""><br>
+		    Vertical Θ: <input oninput="handleClick(this)" type="number" name="vTheta" value=""><br>
+		    Length of ladder: <input oninput="handleClick(this)" type="number" name="distanceDiagonal" value=""><br>
+		    Horizontal component of ladder: <input oninput="handleClick(this)" type="number" name="distanceHorizontal" value=""><br>
+		    Vertical component of ladder: <input oninput="handleClick(this)" type="number" name="distanceVertical" value=""><br>
+				Distance on ladder of person: <input oninput="handleClick(this)" type="number" name="distancePerson" value=""><br>
+		    Mass of Person: <input oninput="handleClick(this)" type="number" name="massPerson" value=""><br>
+		    Mass of Ladder: <input oninput="handleClick(this)" type="number" name="massLadder" value=""><br>
+		    Value for g: <input oninput="handleClick(this)" type="number" name="g" value="10"><br>
+		    <input type="submit" value="Submit" onclick="handleClick(this)">
+		    </form>
+		    <script id="javascript" type="text/javascript" src="./LadderProblem.js"></script>
+		  </div>
+			<div class="container">
+				<p id="answers"></p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
